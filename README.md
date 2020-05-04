@@ -1,2 +1,4 @@
-# 18557-Projekt-Anime.js
-Jan Gąska 18557
+# Group Project by
+-Mateusz Boczarski
+-Aleksander Gola
+-Jan Gąska 
