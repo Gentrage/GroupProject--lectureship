@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="page2.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <title>Answering Questions</title>
+</head>
+<body>  
+
+    <div class="container">
+
+        <div class="nav">
+            
+            <div class="box1">     
+                <a href="index.html">Go back
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box4">     
+                <a href="about.html">About
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>
+            <div class="box3">     
+                <a href="Behaviour.html">Behaviour
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box2">     
+                <a href="TraitsSkills.html">Traits & Skills
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box5">     
+                <a href="Documents.html">Documents
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>     
+                
+                
+        </div>   
+
+       <script>
+            var textWrapper = document.querySelector('.answeringTxt');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: true})
+            .add({
+                targets: '.answeringTxt .letter',
+                translateX: [40,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 500 + 300 * i
+            }).add({
+                targets: '.answeringTxt .letter',
+                delay: 10000
+            }).add({
+                targets: '.answeringTxt .letter',
+                translateX: [0,-30],
+                opacity: [1,0],
+                easing: "easeInExpo",
+                duration: 1100,
+                delay: (el, i) => 100 + 300 * i
+            });
+       </script>
+
+        <div class="main">
+            <div class="img">
+
+                <svg class="pho" width="500" height="380" viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="1" class="lines">                  
+                        <path class="one" fill-rule="evenodd" clip-rule="evenodd" d="M262 381H7.4101V345.433L141.057 201.374C141.058 201.373 141.059 201.371 141.06 201.37C160.803 179.652 174.321 162.096 181.671 148.683L181.674 148.679C189.183 135.125 192.927 121.17 192.927 106.803C192.927 87.5153 186.919 71.7764 174.956 59.4986C163.012 47.2396 147.075 41.0782 127.03 41.0782C102.892 41.0782 84.228 47.7743 70.8895 61.0502C57.7239 74.1585 51.0768 92.5284 51.0768 116.303V117.33H0V116.303C0 81.6581 11.4706 53.5643 34.4644 32.1222L34.4673 32.1194C57.6398 10.677 88.5327 0 127.03 0C163.033 0 191.628 9.20821 212.691 27.7354C233.759 46.0967 244.269 70.6068 244.269 101.155C244.269 138.36 219.857 182.425 171.475 233.301C171.475 233.301 171.475 233.301 171.475 233.301L69.9007 340.179H262V381ZM67.4848 341.206L170.697 232.605C219.039 181.771 243.21 137.954 243.21 101.155C243.21 70.8598 232.801 46.6408 211.982 28.498C191.163 10.184 162.846 1.02695 127.03 1.02695C88.7448 1.02695 58.134 11.6388 35.198 32.8625C12.6653 53.8747 1.28661 81.3457 1.06198 115.276C1.05972 115.617 1.05859 115.96 1.05859 116.303H50.0182C50.0182 92.3403 56.7226 73.684 70.1313 60.3336C83.7165 46.812 102.683 40.0512 127.03 40.0512C147.32 40.0512 163.552 46.2985 175.725 58.7931C187.899 71.2877 193.986 87.2911 193.986 106.803C193.986 121.352 190.193 135.472 182.606 149.165C175.196 162.687 161.611 180.316 141.851 202.053L8.46869 345.827V379.973H260.941V341.206H67.4848Z" stroke-dasharray="500" fill="none"/>
+                        
+
+                        <path class="two" fill-rule="evenodd" clip-rule="evenodd" d="M262 381H7.4101V345.433L141.057 201.374C141.058 201.373 141.059 201.371 141.06 201.37C160.803 179.652 174.321 162.096 181.671 148.683L181.674 148.679C189.183 135.125 192.927 121.17 192.927 106.803C192.927 87.5153 186.919 71.7764 174.956 59.4986C163.012 47.2396 147.075 41.0782 127.03 41.0782C102.892 41.0782 84.228 47.7743 70.8895 61.0502C57.7239 74.1585 51.0768 92.5284 51.0768 116.303V117.33H0V116.303C0 81.6581 11.4706 53.5643 34.4644 32.1222L34.4673 32.1194C57.6398 10.677 88.5327 0 127.03 0C163.033 0 191.628 9.20821 212.691 27.7354C233.759 46.0967 244.269 70.6068 244.269 101.155C244.269 138.36 219.857 182.425 171.475 233.301C171.475 233.301 171.475 233.301 171.475 233.301L69.9007 340.179H262V381ZM67.4848 341.206L170.697 232.605C219.039 181.771 243.21 137.954 243.21 101.155C243.21 70.8598 232.801 46.6408 211.982 28.498C191.163 10.184 162.846 1.02695 127.03 1.02695C88.7448 1.02695 58.134 11.6388 35.198 32.8625C12.6653 53.8747 1.28661 81.3457 1.06198 115.276C1.05972 115.617 1.05859 115.96 1.05859 116.303H50.0182C50.0182 92.3403 56.7226 73.684 70.1313 60.3336C83.7165 46.812 102.683 40.0512 127.03 40.0512C147.32 40.0512 163.552 46.2985 175.725 58.7931C187.899 71.2877 193.986 87.2911 193.986 106.803C193.986 121.352 190.193 135.472 182.606 149.165C175.196 162.687 161.611 180.316 141.851 202.053L8.46869 345.827V379.973H260.941V341.206H67.4848Z" fill="none"/>                       
+                    </g>
+                </svg>
+                    
+                    
+                    
+
+            </div>
+            
+            <div class="text">
+                <h1 class="answeringTxt">How to answer typical and tricky interview questions</h1>
+
+               
+                <svg class="txt3" width="735" height="688" viewBox="0 0 735 688" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M715 1.72H20C9.50659 1.72 1 16.3513 1 34.4V653.6C1 671.649 9.50659 686.28 20 686.28H715C725.493 686.28 734 671.649 734 653.6V34.4C734 16.3513 725.493 1.72 715 1.72ZM20 0C8.9543 0 0 15.4014 0 34.4V653.6C0 672.599 8.95431 688 20 688H715C726.046 688 735 672.599 735 653.6V34.4C735 15.4014 726.046 0 715 0H20Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9676 14L13 14L13 55.2025L23.6958 25.1205C23.9004 24.545 24.3568 24.0946 24.9349 23.8975L53.9676 14ZM13 13C12.4477 13 12 13.4477 12 14V55.2025C12 56.3256 13.566 56.5957 13.9422 55.5375L24.638 25.4555C24.7403 25.1678 24.9685 24.9425 25.2576 24.844L54.2902 14.9465C55.3603 14.5817 55.0981 13 53.9676 13H13Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9676 673.204L13 673.204L13 632.001L23.6958 662.083C23.9004 662.659 24.3568 663.109 24.9349 663.306L53.9676 673.204ZM13 674.204C12.4477 674.204 12 673.756 12 673.204V632.001C12 630.878 13.566 630.608 13.9422 631.666L24.638 661.748C24.7403 662.036 24.9685 662.261 25.2576 662.36L54.2902 672.257C55.3603 672.622 55.0981 674.204 53.9676 674.204H13Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M680.001 672.524L723.611 672.524L723.611 631.001L712.117 661.426C711.902 661.997 711.438 662.438 710.857 662.624L680.001 672.524ZM723.611 673.524C724.163 673.524 724.611 673.077 724.611 672.524V631.001C724.611 629.889 723.069 629.608 722.676 630.648L711.182 661.073C711.074 661.358 710.842 661.579 710.552 661.672L679.695 671.572C678.609 671.921 678.86 673.524 680.001 673.524H723.611Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M680.032 14L721 14L721 55.2025L710.304 25.1205C710.1 24.545 709.643 24.0946 709.065 23.8975L680.032 14ZM721 13C721.552 13 722 13.4477 722 14V55.2025C722 56.3256 720.434 56.5957 720.058 55.5375L709.362 25.4555C709.26 25.1678 709.031 24.9425 708.742 24.844L679.71 14.9465C678.64 14.5817 678.902 13 680.032 13H721Z" stroke-width="4" fill="white"/>
+                </svg>
+                    
+
+                    
+                <div class="about3">         
+                    <p><b>Question: "What are your biggest weaknesses?"</b></p>
+                    Advice: You can make your weakness becomes your advantage. You can also say that you are working on to improve your weaknesses.
+                    <br><hr class="linia"><br>
+                    <p><b>Question: "What kind of work environment do you like best?"</b></p>
+                    Advice: You should think about the company you are applying and about the work environment in that company. For example if the company expects employees to self-manage you should say that you like self-manage.
+                    <br><hr class="linia"><br>
+                    <p><b>Question: "Tell me how you think other people would describe you."</b></p>
+                    Advice: You should say you are not sure what other people think about you, but you think that you have a good opinion among other people.
+                    <br><hr class="linia"><br>
+                    <p><b>Question: "What is your leadership style?"</b></p>
+                    Advice: You should give some examples when you were leading the group and dealt with a problem.
+                    <br><hr class="linia"><br>
+                    <p><b>Question: "What questions do you have for me?"</b></p>
+                    Advice: You should ask some smart question to see if the company is good for you.
+                    <br><hr class="linia"><br>
+                    <p><b>Question: "What are your biggest strengths?"</b></p>
+                    Advice: When you talk about your strengths you should give some examples to prove it.
+                    <br><hr class="linia"><br>
+                    <p><b>Question: "What can we expect from you in your first three months?"</b></p>
+                    Advice: You should use general framework. For example you can say that you will work hard and focus on doing what you do best.
+                    <br><hr class="linia"><br>
+                    <p><b>Question: "Why do you want this job?"</b></p>
+                    Advice: You should say why this work is perfect for you and what you want to achieve.
+                    <br><hr class="linia"><br>
+                    <p><b>Question: "Why do you want to leave your current job?"</b></p>
+                    Advice: Don’t talk about the bad things, that happened to you in your job. Talk about things that you learned by working here and your vision for the future. 
+                </div>    
+                
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Group Project 2020</span>
+                </span>
+            </h1>
+        </div>   
+
+    </div>    
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script>
+        anime({
+            targets: '.txt3',
+            duration: 3000,
+            delay: 2000,
+            translateX: [2000,0]
+        });
+
+        
+        anime({
+            targets: '.about3',
+            duration: 3000,
+            delay: 2000,
+            translateX: [2000,0]
+
+        });
+
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.one',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 4000,
+            delay: function(el, i) { return i * 500 },
+        })
+        .add({
+            targets: '.two',
+            opacity: [0,1],
+            translateX: [
+                {value: 50, duration: 1000}
+            ],
+            translateY: [
+                {value: 20, duration: 1000}
+            ] 
+        });
+    </script>
+
+    <script>
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml11 .line',
+            scaleY: [0,1],
+            opacity: [0.5,1],
+            easing: "easeOutExpo",
+            duration: 1200
+        })
+        .add({
+            targets: '.ml11 .line',
+            translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+            easing: "easeOutExpo",
+            duration: 3000,
+            delay: 200
+        }).add({
+            targets: '.ml11 .letter',
+            opacity: [0,1],
+            duration: 1,
+            offset: '-=775',
+            delay: (el, i) => 34 * (i+1)
+        }).add({
+            targets: '.ml11',
+            opacity: 1,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+    </script>
+
+</body>
+</html>
+    

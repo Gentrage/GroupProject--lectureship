@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="page2.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <title>Behaviour</title>
+</head>
+<body>  
+
+    <div class="container">
+
+        <div class="nav">
+            
+            <div class="box1">     
+                <a href="index.html">Go back
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box3">     
+                <a href="about.html">About
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>
+            <div class="box2">     
+                <a href="TraitsSkills.html">Traits & Skills
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box4">     
+                <a href="AnsweringQuestions.html">Answering Questions
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box5">     
+                <a href="Documents.html">Documents
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>     
+                
+                
+        </div>   
+
+       <script>
+            var textWrapper = document.querySelector('.behaviourTxt');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: true})
+            .add({
+                targets: '.behaviourTxt .letter',
+                translateX: [40,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 500 + 300 * i
+            }).add({
+                targets: '.behaviourTxt .letter',
+                delay: 10000
+            }).add({
+                targets: '.behaviourTxt .letter',
+                translateX: [0,-30],
+                opacity: [1,0],
+                easing: "easeInExpo",
+                duration: 1100,
+                delay: (el, i) => 100 + 300 * i
+            });
+       </script>
+
+        <div class="main">
+            <div class="img">
+                    
+                <svg class="pho" width="500" height="380" viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="1" class="lines"> 
+                        <path class="one" fill-rule="evenodd" clip-rule="evenodd" d="M264.75 245.053V285.346H214.25V371H165.75V285.346H0V256.411L163.456 0H214.25V245.053H264.75ZM166.75 284.332V369.986H213.25V284.332H263.75V246.066H213.25V1.01366H164L1 256.71V284.332H166.75ZM162.11 75.7822L55.3264 245.053H165.75V69.0742L162.11 75.7822ZM166.75 65.1277V246.066H53.5L161.25 75.2643L166.75 65.1277Z" stroke-dasharray="500" fill="none"/>
+                        
+                        <path class="two" fill-rule="evenodd" clip-rule="evenodd" d="M264.75 245.053V285.346H214.25V371H165.75V285.346H0V256.411L163.456 0H214.25V245.053H264.75ZM166.75 284.332V369.986H213.25V284.332H263.75V246.066H213.25V1.01366H164L1 256.71V284.332H166.75ZM162.11 75.7822L55.3264 245.053H165.75V69.0742L162.11 75.7822ZM166.75 65.1277V246.066H53.5L161.25 75.2643L166.75 65.1277Z" fill="none"/>         
+                    </g>
+                </svg>    
+                    
+
+            </div>
+            
+            <div class="text">
+                <h1 class="behaviourTxt">Dos and don'ts of a job interview</h1>
+
+                <svg class="txt" width="735" height="400" viewBox="0 0 735 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M715 1H20C9.50659 1 1 9.50659 1 20V380C1 390.493 9.50659 399 20 399H715C725.493 399 734 390.493 734 380V20C734 9.50659 725.493 1 715 1ZM20 0C8.9543 0 0 8.95431 0 20V380C0 391.046 8.95431 400 20 400H715C726.046 400 735 391.046 735 380V20C735 8.95431 726.046 0 715 0H20Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9676 14L13 14L13 55.2025L23.6958 25.1205C23.9004 24.545 24.3568 24.0946 24.9349 23.8975L53.9676 14ZM13 13C12.4477 13 12 13.4477 12 14V55.2025C12 56.3256 13.566 56.5957 13.9422 55.5375L24.638 25.4555C24.7403 25.1678 24.9685 24.9425 25.2576 24.844L54.2902 14.9465C55.3603 14.5817 55.0981 13 53.9676 13H13Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9676 386L13 386L13 344.797L23.6958 374.88C23.9004 375.455 24.3568 375.905 24.9349 376.103L53.9676 386ZM13 387C12.4477 387 12 386.552 12 386V344.797C12 343.674 13.566 343.404 13.9422 344.462L24.638 374.544C24.7403 374.832 24.9685 375.057 25.2576 375.156L54.2902 385.053C55.3603 385.418 55.0981 387 53.9676 387H13Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M677.39 386L721 386L721 344.477L709.506 374.902C709.291 375.472 708.827 375.913 708.246 376.1L677.39 386ZM721 387C721.552 387 722 386.552 722 386V344.477C722 343.365 720.457 343.083 720.065 344.123L708.571 374.549C708.463 374.834 708.231 375.054 707.941 375.147L677.084 385.048C675.998 385.396 676.249 387 677.39 387H721Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M680.032 14L721 14L721 55.2025L710.304 25.1205C710.1 24.545 709.643 24.0946 709.065 23.8975L680.032 14ZM721 13C721.552 13 722 13.4477 722 14V55.2025C722 56.3256 720.434 56.5957 720.058 55.5375L709.362 25.4555C709.26 25.1678 709.031 24.9425 708.742 24.844L679.71 14.9465C678.64 14.5817 678.902 13 680.032 13H721Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M400.95 27.05H333.05V94.95H400.95V27.05ZM332 26V96H402V26H332Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M366.996 92.4151L399.464 59.7571L367.004 27.4849L334.535 60.1429L366.996 92.4151ZM400.949 59.7527L367 26L333.05 60.1473L367 93.9L400.949 59.7527Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M363.288 39.8198L366.629 36.4788C366.834 36.2737 367.166 36.2737 367.371 36.4788L370.712 39.8198C370.917 40.0249 370.917 40.3573 370.712 40.5623C370.507 40.7673 370.175 40.7673 369.97 40.5623L367.525 38.1174V82.35H366.475V38.1174L364.03 40.5623C363.825 40.7673 363.493 40.7673 363.288 40.5623C363.083 40.3573 363.083 40.0249 363.288 39.8198Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M386.753 55.9225L390.119 59.2389C390.325 59.4424 390.328 59.7748 390.124 59.9813L386.808 63.3469C386.604 63.5534 386.272 63.5558 386.065 63.3523C385.859 63.1488 385.856 62.8164 386.06 62.6099L388.487 60.1471L343.904 60.4749L343.896 59.425L388.479 59.0972L386.016 56.6704C385.81 56.4668 385.807 56.1344 386.011 55.9279C386.214 55.7214 386.547 55.7189 386.753 55.9225Z" stroke-width="4" fill="white"/>
+                </svg>
+                    
+                <div class="about">         
+                    There are a few things you should do during an interview. Firstly, you should try to drive the discussion, it is important to make interview more of a conversation. You should also try to ask your own questions about the company and job. Another important thing is to find a good way to demonstrate your qualifications. For example, you can demonstrate them through a story or by showing examples of your previous projects. The last thing is smile, that is because smile makes you fell happier and more self-confident. The thing you should avoid during the interview is being too ambitious, you should be realistic.
+                </div>    
+                
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Group Project 2020</span>
+                </span>
+            </h1>
+        </div>   
+
+    </div>    
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script>
+        anime({
+            targets: '.txt',
+            duration: 3000,
+            delay: 2000,
+            translateX: [2000,0]
+        });
+
+        
+        anime({
+            targets: '.about',
+            duration: 3000,
+            delay: 2000,
+            translateX: [2000,0]
+
+        });
+
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.one',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 4000,
+            delay: function(el, i) { return i * 500 },
+        })
+        .add({
+            targets: '.two',
+            opacity: [0,1],
+            translateX: [
+                {value: 50, duration: 1000}
+            ],
+            translateY: [
+                {value: 20, duration: 1000}
+            ] 
+        });
+    </script>
+
+    <script>
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml11 .line',
+            scaleY: [0,1],
+            opacity: [0.5,1],
+            easing: "easeOutExpo",
+            duration: 1200
+        })
+        .add({
+            targets: '.ml11 .line',
+            translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+            easing: "easeOutExpo",
+            duration: 3000,
+            delay: 200
+        }).add({
+            targets: '.ml11 .letter',
+            opacity: [0,1],
+            duration: 1,
+            offset: '-=775',
+            delay: (el, i) => 34 * (i+1)
+        }).add({
+            targets: '.ml11',
+            opacity: 1,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+    </script>
+
+</body>
+</html>
+    

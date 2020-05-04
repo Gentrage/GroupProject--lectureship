@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="page2.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <title>Traits & Skills</title>
+</head>
+<body>  
+
+    <div class="container">
+
+        <div class="nav">
+            
+            <div class="box1">     
+                <a href="index.html">Go back
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box2">     
+                <a href="about.html">About
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>
+            <div class="box3">     
+                <a href="Behaviour.html">Behaviour
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box4">     
+                <a href="AnsweringQuestions.html">Answering Questions
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box5">     
+                <a href="Documents.html">Documents
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>     
+                
+                
+        </div>   
+
+       <script>
+            var textWrapper = document.querySelector('.traitsTxt');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: true})
+            .add({
+                targets: '.traitsTxt .letter',
+                translateX: [40,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 500 + 300 * i
+            }).add({
+                targets: '.traitsTxt .letter',
+                delay: 10000
+            }).add({
+                targets: '.traitsTxt .letter',
+                translateX: [0,-30],
+                opacity: [1,0],
+                easing: "easeInExpo",
+                duration: 1100,
+                delay: (el, i) => 100 + 300 * i
+            });
+       </script>
+
+        <div class="main">
+            <div class="img">
+                           
+                <svg class="pho" width="500" height="380" viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="1" class="lines">             
+                        <path class="one" fill-rule="evenodd" clip-rule="evenodd" d="M74 162.312H109.743C131.406 161.985 148.313 156.359 160.584 145.543C172.842 134.738 179 120.138 179 101.63C179 80.7318 173.726 65.2393 163.354 54.965C152.983 44.6913 137.345 39.4681 116.25 39.4681C96.4522 39.4681 80.7191 45.078 68.9419 56.2144C57.3355 67.1826 51.5 81.7925 51.5 100.15V101.137H3.25V100.15C3.25 71.4274 13.8652 47.5612 35.0788 28.623C56.4549 9.52409 83.5386 0 116.25 0C150.761 0 177.948 9.01242 197.682 27.1524C217.427 45.3031 227.25 70.5028 227.25 102.617C227.25 118.468 222.005 133.789 211.573 148.565C201.764 162.686 188.505 173.394 171.825 180.691C190.776 187.063 205.538 197.261 216.052 211.305C227.2 225.973 232.75 243.867 232.75 264.93C232.75 297.399 221.993 323.254 200.418 342.38C178.867 361.484 150.864 371 116.5 371C82.1452 371 54.0646 361.818 32.3478 343.38L32.3448 343.378C10.7747 324.921 0 300.548 0 270.356V269.37H48.5V270.356C48.5 289.031 54.6604 303.883 66.9271 315.019C79.2014 326.161 95.6888 331.779 116.5 331.779C138.663 331.779 155.459 326.069 167.048 314.795C178.636 303.522 184.5 287.281 184.5 265.916C184.5 245.246 178.076 229.512 165.343 218.558C152.585 207.584 134.101 201.862 109.743 201.534H74V162.312ZM109.75 200.547C134.25 200.876 153 206.632 166 217.814C179 228.997 185.5 245.031 185.5 265.916C185.5 287.459 179.583 303.987 167.75 315.498C155.917 327.01 138.833 332.765 116.5 332.765C95.5 332.765 78.75 327.092 66.25 315.745C53.75 304.398 47.5 289.268 47.5 270.356H1C1 270.686 1.0013 271.015 1.00388 271.343C1.23623 300.816 11.9016 324.579 33 342.632C54.5 360.886 82.3333 370.013 116.5 370.013C150.667 370.013 178.417 360.557 199.75 341.646C221.083 322.734 231.75 297.162 231.75 264.93C231.75 244.044 226.25 226.366 215.25 211.894C204.681 197.776 189.75 187.571 170.457 181.278C169.974 181.121 169.488 180.966 169 180.813C169.473 180.62 169.943 180.423 170.41 180.224C187.409 172.99 200.855 162.25 210.75 148.005C221.083 133.369 226.25 118.24 226.25 102.617C226.25 70.7137 216.5 45.7994 197 27.8743C177.5 9.94925 150.583 0.986702 116.25 0.986702C83.75 0.986702 56.9167 10.4426 35.75 29.3544C14.9933 47.8846 4.49466 71.1543 4.25423 99.1636C4.25141 99.4918 4.25 99.8207 4.25 100.15H50.5C50.5 81.5674 56.4167 66.6846 68.25 55.502C80.25 44.1549 96.25 38.4814 116.25 38.4814C158.75 38.4814 180 59.531 180 101.63C180 120.378 173.75 135.26 161.25 146.279C148.75 157.297 131.583 162.97 109.75 163.299H75V200.547H109.75Z" stroke-dasharray="500" fill="none"/>
+                        
+
+                        <path class="two" fill-rule="evenodd" clip-rule="evenodd" d="M74 162.312H109.743C131.406 161.985 148.313 156.359 160.584 145.543C172.842 134.738 179 120.138 179 101.63C179 80.7318 173.726 65.2393 163.354 54.965C152.983 44.6913 137.345 39.4681 116.25 39.4681C96.4522 39.4681 80.7191 45.078 68.9419 56.2144C57.3355 67.1826 51.5 81.7925 51.5 100.15V101.137H3.25V100.15C3.25 71.4274 13.8652 47.5612 35.0788 28.623C56.4549 9.52409 83.5386 0 116.25 0C150.761 0 177.948 9.01242 197.682 27.1524C217.427 45.3031 227.25 70.5028 227.25 102.617C227.25 118.468 222.005 133.789 211.573 148.565C201.764 162.686 188.505 173.394 171.825 180.691C190.776 187.063 205.538 197.261 216.052 211.305C227.2 225.973 232.75 243.867 232.75 264.93C232.75 297.399 221.993 323.254 200.418 342.38C178.867 361.484 150.864 371 116.5 371C82.1452 371 54.0646 361.818 32.3478 343.38L32.3448 343.378C10.7747 324.921 0 300.548 0 270.356V269.37H48.5V270.356C48.5 289.031 54.6604 303.883 66.9271 315.019C79.2014 326.161 95.6888 331.779 116.5 331.779C138.663 331.779 155.459 326.069 167.048 314.795C178.636 303.522 184.5 287.281 184.5 265.916C184.5 245.246 178.076 229.512 165.343 218.558C152.585 207.584 134.101 201.862 109.743 201.534H74V162.312ZM109.75 200.547C134.25 200.876 153 206.632 166 217.814C179 228.997 185.5 245.031 185.5 265.916C185.5 287.459 179.583 303.987 167.75 315.498C155.917 327.01 138.833 332.765 116.5 332.765C95.5 332.765 78.75 327.092 66.25 315.745C53.75 304.398 47.5 289.268 47.5 270.356H1C1 270.686 1.0013 271.015 1.00388 271.343C1.23623 300.816 11.9016 324.579 33 342.632C54.5 360.886 82.3333 370.013 116.5 370.013C150.667 370.013 178.417 360.557 199.75 341.646C221.083 322.734 231.75 297.162 231.75 264.93C231.75 244.044 226.25 226.366 215.25 211.894C204.681 197.776 189.75 187.571 170.457 181.278C169.974 181.121 169.488 180.966 169 180.813C169.473 180.62 169.943 180.423 170.41 180.224C187.409 172.99 200.855 162.25 210.75 148.005C221.083 133.369 226.25 118.24 226.25 102.617C226.25 70.7137 216.5 45.7994 197 27.8743C177.5 9.94925 150.583 0.986702 116.25 0.986702C83.75 0.986702 56.9167 10.4426 35.75 29.3544C14.9933 47.8846 4.49466 71.1543 4.25423 99.1636C4.25141 99.4918 4.25 99.8207 4.25 100.15H50.5C50.5 81.5674 56.4167 66.6846 68.25 55.502C80.25 44.1549 96.25 38.4814 116.25 38.4814C158.75 38.4814 180 59.531 180 101.63C180 120.378 173.75 135.26 161.25 146.279C148.75 157.297 131.583 162.97 109.75 163.299H75V200.547H109.75Z" fill="none"/>                      
+                    </g>
+                </svg>
+                    
+
+            </div>
+            
+            <div class="text">
+                <h1 class="traitsTxt">Personality traits and universal people skills that are the most desired</h1>
+
+                <svg class="txt2" width="735" height="550" viewBox="0 0 735 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M715 1.375H20C9.50659 1.375 1 13.0716 1 27.5V522.5C1 536.928 9.50659 548.625 20 548.625H715C725.493 548.625 734 536.928 734 522.5V27.5C734 13.0716 725.493 1.375 715 1.375ZM20 0C8.9543 0 0 12.3122 0 27.5V522.5C0 537.688 8.95431 550 20 550H715C726.046 550 735 537.688 735 522.5V27.5C735 12.3122 726.046 0 715 0H20Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9676 14L13 14L13 55.2025L23.6958 25.1205C23.9004 24.545 24.3568 24.0946 24.9349 23.8975L53.9676 14ZM13 13C12.4477 13 12 13.4477 12 14V55.2025C12 56.3256 13.566 56.5957 13.9422 55.5375L24.638 25.4555C24.7403 25.1678 24.9685 24.9425 25.2576 24.844L54.2902 14.9465C55.3603 14.5817 55.0981 13 53.9676 13H13Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9676 536.204L13 536.204L13 495.001L23.6958 525.083C23.9004 525.659 24.3568 526.109 24.9349 526.306L53.9676 536.204ZM13 537.204C12.4477 537.204 12 536.756 12 536.204V495.001C12 493.878 13.566 493.608 13.9422 494.666L24.638 524.748C24.7403 525.036 24.9685 525.261 25.2576 525.36L54.2902 535.257C55.3603 535.622 55.0981 537.204 53.9676 537.204H13Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M677.001 535.524L720.611 535.524L720.611 494.001L709.117 524.426C708.902 524.997 708.438 525.438 707.857 525.624L677.001 535.524ZM720.611 536.524C721.163 536.524 721.611 536.077 721.611 535.524V494.001C721.611 492.889 720.069 492.608 719.676 493.648L708.182 524.073C708.074 524.358 707.842 524.579 707.552 524.672L676.695 534.572C675.609 534.921 675.86 536.524 677.001 536.524H720.611Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M680.032 14L721 14L721 55.2025L710.304 25.1205C710.1 24.545 709.643 24.0946 709.065 23.8975L680.032 14ZM721 13C721.552 13 722 13.4477 722 14V55.2025C722 56.3256 720.434 56.5957 720.058 55.5375L709.362 25.4555C709.26 25.1678 709.031 24.9425 708.742 24.844L679.71 14.9465C678.64 14.5817 678.902 13 680.032 13H721Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M400.95 27.05H333.05V94.95H400.95V27.05ZM332 26V96H402V26H332Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M366.996 92.415L399.464 59.757L367.004 27.4849L334.535 60.1429L366.996 92.415ZM400.949 59.7527L367 25.9999L333.05 60.1472L367 93.8999L400.949 59.7527Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M363.288 39.8198L366.629 36.4788C366.834 36.2737 367.166 36.2737 367.371 36.4788L370.712 39.8198C370.917 40.0249 370.917 40.3573 370.712 40.5623C370.507 40.7673 370.175 40.7673 369.97 40.5623L367.525 38.1174V82.35H366.475V38.1174L364.03 40.5623C363.825 40.7673 363.493 40.7673 363.288 40.5623C363.083 40.3573 363.083 40.0249 363.288 39.8198Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M386.753 55.9225L390.119 59.2389C390.325 59.4424 390.328 59.7748 390.124 59.9813L386.808 63.3469C386.604 63.5534 386.272 63.5558 386.065 63.3523C385.859 63.1488 385.856 62.8164 386.06 62.6099L388.487 60.1471L343.904 60.4749L343.896 59.425L388.479 59.0972L386.016 56.6704C385.81 56.4668 385.807 56.1344 386.011 55.9279C386.214 55.7214 386.547 55.7189 386.753 55.9225Z" stroke-width="4" fill="white"/>
+                    </svg>
+                    
+                    
+                <div class="about2">         
+                    <p><b>Skills:</b>
+                    <p>- Time management - it is important to meeting deadlines and staying efficient
+                    <p>- Problem solving - you should be able to find the best way to solve the problem
+                    <p> - Teamwork - even positions with a lot of independent work will still require you to collaborate with others
+                    <p>- Critical thinking - ask intelligent questions and draw conclusions
+                    <p>- Communication - you can solve most problems with the proper communication
+                    <br><hr class="linia"><br>
+                    <p><b>Personality Traits:</b>
+                    <p> - Adaptability - you can handle new situations
+                    <p>- Reliable - you keep your word
+                    <p>- Sociable - you like working with other people
+                    <p>- Imaginative - you are able to find new ways to solve the problem
+                    <p>- Helpful - you know how to help your colleagues
+                </div>    
+                
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Group Project 2020</span>
+                </span>
+            </h1>
+        </div>   
+
+    </div>    
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script>
+        anime({
+            targets: '.txt2',
+            duration: 3000,
+            delay: 2000,
+            translateX: [2000,0]
+        });
+
+        
+        anime({
+            targets: '.about2',
+            duration: 3000,
+            delay: 2000,
+            translateX: [2000,0]
+
+        });
+
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.one',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 4000,
+            delay: function(el, i) { return i * 500 },
+        })
+        .add({
+            targets: '.two',
+            opacity: [0,1],
+            translateX: [
+                {value: 50, duration: 1000}
+            ],
+            translateY: [
+                {value: 20, duration: 1000}
+            ] 
+        });
+    </script>
+
+    <script>
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml11 .line',
+            scaleY: [0,1],
+            opacity: [0.5,1],
+            easing: "easeOutExpo",
+            duration: 1200
+        })
+        .add({
+            targets: '.ml11 .line',
+            translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+            easing: "easeOutExpo",
+            duration: 3000,
+            delay: 200
+        }).add({
+            targets: '.ml11 .letter',
+            opacity: [0,1],
+            duration: 1,
+            offset: '-=775',
+            delay: (el, i) => 34 * (i+1)
+        }).add({
+            targets: '.ml11',
+            opacity: 1,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+    </script>
+
+</body>
+</html>
+    

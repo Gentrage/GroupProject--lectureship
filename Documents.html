@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="page2.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <title>Documents</title>
+</head>
+<body>  
+
+    <div class="container">
+
+        <div class="nav">
+            
+            <div class="box1">     
+                <a href="index.html">Go back
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box5">     
+                <a href="about.html">About
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>
+            <div class="box3">     
+                <a href="Behaviour.html">Behaviour
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box4">     
+                <a href="AnsweringQuestions.html">Answering Questions
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>  
+            <div class="box2">     
+                <a href="TraitsSkills.html">Traits & Skills
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>    
+            </div>     
+                
+                
+        </div>   
+
+       <script>
+            var textWrapper = document.querySelector('.ducumentsTxt');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: true})
+            .add({
+                targets: '.documentsTxt .letter',
+                translateX: [40,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 500 + 300 * i
+            }).add({
+                targets: '.documentsTxt .letter',
+                delay: 10000
+            }).add({
+                targets: '.documentsTxt .letter',
+                translateX: [0,-30],
+                opacity: [1,0],
+                easing: "easeInExpo",
+                duration: 1100,
+                delay: (el, i) => 100 + 300 * i
+            });
+       </script>
+
+        <div class="main">
+            <div class="img">     
+                <svg class="pho" width="500" height="380" viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">\
+                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="1" class="lines">
+                    
+                        <path class="one" fill-rule="evenodd" clip-rule="evenodd" d="M141.609 371H93.1572V60.4623L0 95.015V50.4997L133.186 0H141.609V371ZM94.1562 59.017V369.991H140.61V1.00884H133.367L0.999005 51.1985V93.5697L94.1562 59.017Z" stroke-dasharray="500" fill="none"/>
+                        
+
+                        <path class="two" fill-rule="evenodd" clip-rule="evenodd" d="M142.25 379.25H93.75V68.7123L0.5 103.265V58.7497L133.818 8.25H142.25V379.25ZM94.75 67.267V378.241H141.25V9.25884H134L1.5 59.4485V101.82L94.75 67.267Z" fill="none"/>                   
+                    </g>
+                </svg>   
+            </div>
+            
+
+  
+                
+
+
+
+            <div class="text">
+                <h1 class="documentsTxt">How to deal with the recruitment documents</h1>
+
+                <svg class="txt3" width="735" height="688" viewBox="0 0 735 688" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M715 1.72H20C9.50659 1.72 1 16.3513 1 34.4V653.6C1 671.649 9.50659 686.28 20 686.28H715C725.493 686.28 734 671.649 734 653.6V34.4C734 16.3513 725.493 1.72 715 1.72ZM20 0C8.9543 0 0 15.4014 0 34.4V653.6C0 672.599 8.95431 688 20 688H715C726.046 688 735 672.599 735 653.6V34.4C735 15.4014 726.046 0 715 0H20Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9676 14L13 14L13 55.2025L23.6958 25.1205C23.9004 24.545 24.3568 24.0946 24.9349 23.8975L53.9676 14ZM13 13C12.4477 13 12 13.4477 12 14V55.2025C12 56.3256 13.566 56.5957 13.9422 55.5375L24.638 25.4555C24.7403 25.1678 24.9685 24.9425 25.2576 24.844L54.2902 14.9465C55.3603 14.5817 55.0981 13 53.9676 13H13Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9676 673.204L13 673.204L13 632.001L23.6958 662.083C23.9004 662.659 24.3568 663.109 24.9349 663.306L53.9676 673.204ZM13 674.204C12.4477 674.204 12 673.756 12 673.204V632.001C12 630.878 13.566 630.608 13.9422 631.666L24.638 661.748C24.7403 662.036 24.9685 662.261 25.2576 662.36L54.2902 672.257C55.3603 672.622 55.0981 674.204 53.9676 674.204H13Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M680.001 672.524L723.611 672.524L723.611 631.001L712.117 661.426C711.902 661.997 711.438 662.438 710.857 662.624L680.001 672.524ZM723.611 673.524C724.163 673.524 724.611 673.077 724.611 672.524V631.001C724.611 629.889 723.069 629.608 722.676 630.648L711.182 661.073C711.074 661.358 710.842 661.579 710.552 661.672L679.695 671.572C678.609 671.921 678.86 673.524 680.001 673.524H723.611Z" stroke-width="4" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M680.032 14L721 14L721 55.2025L710.304 25.1205C710.1 24.545 709.643 24.0946 709.065 23.8975L680.032 14ZM721 13C721.552 13 722 13.4477 722 14V55.2025C722 56.3256 720.434 56.5957 720.058 55.5375L709.362 25.4555C709.26 25.1678 709.031 24.9425 708.742 24.844L679.71 14.9465C678.64 14.5817 678.902 13 680.032 13H721Z" stroke-width="4" fill="white"/>
+                </svg>
+                    
+                <div class="about3">
+                    <font size="">
+                    <p><b>How to deal with cover letter?</b></p>    
+                    <br> 
+                    You should always include a cover letter, unless the job advertisement clearly says not to. What is a cover letter? It's a single-page letter that you include with your job application. Remember to use a different one for each job you apply for.
+                    When you are writing a cover letter, firstly you should introduce yourself and mention about the job or kind of job you're applying for. After that You have to present your skills and experience, You also need to show how they match the needs of the job. One of the most important things is to encourage the reader to read your resume. Finally, finish with a call to action (for example, asking for an interview or a meeting).
+                    Keep your cover letter quite short. A cover letter should be a summary of your resume, so don’t write more than one page.
+                    <br><hr class="linia"><br>
+                    <p><b>How to deal with CV?</b></p>
+                    <br>
+                    The most important thing about formatting your student resume is dividing it into sections. Your CV should be clear, brief, complete, and up-to-date with your work experience and educational information. The basic components that make up a good CV are: Contact Details, Personal Profile , Skills , Work Section, Education Section and Hobbies Section.
+                    The elements that you include and their order will depend on what you are applying for. For example, if you haven’t extensive experience, you should focus on your education, mention your academic achievements and relevant coursework but even then, don’t forget about your work experience section. Include relevant jobs in the work experience section: even part-time jobs or volunteering. The best style of employment record is the chronological curriculum vitae. Remember to put your career history or education in reverse date order starting with the most recent experience. In contact details section, that will be on the top of your CV, you have to include your full name, email address, contact number and home address.
+                    In Personal Profile it is important to mention about your features of character and abilities which might be useful in your future job. For example, if you are applying for a shop assistant role, express your passion to help customers or to develop your experience in a retail environment. 
+                    When you are creating Skills Section, firstly look at job advertisement and write down all the skills they require, highlight most relevant abilities.
+                    Hobbies Section should mentioning your interests allows your personality to shine through.
+                    </font>
+                </div>    
+                
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Group Project 2020</span>
+                </span>
+            </h1>
+        </div>   
+
+    </div>    
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script>
+        anime({
+            targets: '.txt3',
+            duration: 3000,
+            delay: 2000,
+            translateX: [2000,0]
+        });
+
+        
+        anime({
+            targets: '.about3',
+            duration: 3000,
+            delay: 2000,
+            translateX: [2000,0]
+
+        });
+
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.one',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 4000,
+            delay: function(el, i) { return i * 500 },
+        })
+        .add({
+            targets: '.two',
+            opacity: [0,1],
+            translateX: [
+                {value: 50, duration: 1000}
+            ],
+            translateY: [
+                {value: 20, duration: 1000}
+            ] 
+        });
+    </script>
+
+    <script>
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml11 .line',
+            scaleY: [0,1],
+            opacity: [0.5,1],
+            easing: "easeOutExpo",
+            duration: 1200
+        })
+        .add({
+            targets: '.ml11 .line',
+            translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+            easing: "easeOutExpo",
+            duration: 3000,
+            delay: 200
+        }).add({
+            targets: '.ml11 .letter',
+            opacity: [0,1],
+            duration: 1,
+            offset: '-=775',
+            delay: (el, i) => 34 * (i+1)
+        }).add({
+            targets: '.ml11',
+            opacity: 1,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+    </script>
+
+</body>
+</html>
+    
